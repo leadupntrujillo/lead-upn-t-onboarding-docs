@@ -1,0 +1,3 @@
+# Ignorar todos los archivos de diagramas de Draw.io
+*.drawio
+assets/images/Diagrama de workflow.svg
