@@ -1,14 +1,17 @@
-# Trunk-Based Development (TBD) en Lead UPN
+# <img src="../../assets/images/org_emoji_animated.gif" width=25> Trunk-Based Development (TBD) en Lead UPN Trujillo
+
+**Autor:** [Axel Castro A.] 
+
+**Fecha:** [08/03/2026] 
+
+**Versión:** 1.2.1
+
+---
 
 ## 1. ¿Por qué TBD en Lead UPN?
 En Lead UPN Trujillo, no queremos perder tiempo resolviendo conflictos de código de hace dos semanas. Queremos entregar valor continuo. Trunk-Based Development (TBD) significa que todos trabajamos sobre una única rama principal (main) haciendo integraciones pequeñas y frecuentes.
 
-### Lo que DEJAMOS ATRÁS:
-* Ramas eternas: feature/modulo-gigante que dura 3 semanas sin mergear.
-* Merge Hell: Pasar 2 días arreglando conflictos antes de un demo.
-* "Funciona en mi local": Código que no ha tocado el entorno de CI/CD en días.
-
-### El Nuevo Estándar:
+### El Estándar:
 * Ramas efímeras: Viven máximo 1 a 3 días.
 * Commits Atómicos: Pequeños cambios con un propósito único.
 * Main siempre verde: main siempre debe ser desplegable.
@@ -18,14 +21,24 @@ En Lead UPN Trujillo, no queremos perder tiempo resolviendo conflictos de códig
 
 ## 2. Flujo de Trabajo (Workflow)
 
-
-
 ### Arquitectura de Ramas y Entornos
-1.  **Local**: Tu entorno de desarrollo.
-2.  **Pull Request (PR)**: Validación de código obligatoria.
-3.  **Main**: La verdad absoluta del código.
-4.  **Staging**: Copia fiel de producción para pruebas finales (se actualiza con cada merge a main).
-5.  **Production**: Donde viven los usuarios (se actualiza solo al crear un Tag).
+
+```mermaid
+flowchart LR
+    Dev[💻 Developer Local] -->|Push PR| Feat([Branch: feat/xyz])
+    Feat -->|Code Review + CI| Appr{✅ Aprobado?}
+    Appr -->|Merge| Main[🛡️ Main Branch]
+    Main -->|Auto Deploy| Stg[🟠 Staging Environment]
+    Stg -->|Test Manual OK| ProdReady{🚀 Listo para Prod?}
+    ProdReady -->|Git Tag v1.2.0| Prod[🟢 Production Environment]
+
+```
+
+1. **Local**: Tu entorno de desarrollo.
+2. **Pull Request (PR)**: Validación de código obligatoria.
+3. **Main**: La verdad absoluta del código.
+4. **Staging**: Copia fiel de producción para pruebas finales (se actualiza con cada merge a main).
+5. **Production**: Donde viven los usuarios (se actualiza solo al crear un Tag).
 
 ---
 
@@ -62,3 +75,11 @@ En Lead UPN, las ramas son efímeras.
     2.  Arreglar y commitear.
     3.  Push y PR urgente a main.
     4.  Crear Tag inmediato v1.2.1 para deployar.
+
+--- 
+
+## <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="24" alt="Document"> **Para profundizar:**  
+Si tienes alguna duda particular o quieres ver el detalle completo, revisa la sección correspondiente en la guía original: [Guía: Trunk-Based Development][URL].
+
+[URL]: https://Rellenar-en-un-momento.com
+

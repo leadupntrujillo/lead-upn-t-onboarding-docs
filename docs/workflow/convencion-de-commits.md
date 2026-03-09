@@ -1,4 +1,12 @@
-# Estándar de Commits (Lead UPN Style)
+# <img src="../../assets/images/org_emoji_animated.gif" width=25> Estándar de Commits (Lead UPN Style)
+
+**Autor:** [Axel Castro A.] 
+
+**Fecha:** [08/03/2026] 
+
+**Versión:** 1.2.0
+
+---
 
 Para mantener un historial profesional y legible, utilizaremos Conventional Commits. Esto no es opcional; es parte de nuestra cultura de ingeniería.
 
@@ -44,3 +52,10 @@ Formato base: `tipo (alcance opcional): descripción breve`
 **Caso 3: Cambio que rompe compatibilidad (Breaking Change)**
 `git commit -m "feat!: remove support for v1 api endpoints"`
 *(Nota el signo de exclamación `!` antes de los dos puntos)*
+
+--- 
+
+## <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" width="24" alt="Document"> **Para profundizar:**  
+Si tienes alguna duda particular o quieres ver el detalle completo, revisa la sección correspondiente en la guía original: [Guía: Trunk-Based Development][URL].
+
+[URL]: https://Rellenar-en-un-momento.com
