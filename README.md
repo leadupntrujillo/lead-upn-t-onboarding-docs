@@ -26,5 +26,7 @@ Si encuentras un error, falta información o quieres proponer una mejora en nues
 > 📖 **Para profundizar:** Si tienes alguna duda particular o quieres ver el detalle completo, revisa la sección correspondiente en la guía original: [Guía de Ingeniería: Trunk-Based Development][id].
 
 [id]: https://Rellenar-en-un-momento.com
+
 ---
+
 *Mantenido con ❤️ por el equipo de Lead UPN Trujillo.*
