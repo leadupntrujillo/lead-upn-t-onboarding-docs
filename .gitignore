@@ -1,0 +1,3 @@
+# Ignorar todos los archivos especificados
+*.drawio
+assets/images/Diagrama de workflow.svg

@@ -1,4 +1,4 @@
-# 🤝 Cómo contribuir a Onboarding Docs
+# <img src="assets/images/rocket.gif" width=30 alt="Rocket">🤝 Cómo contribuir a Onboarding Docs
 
 ¡Gracias por tu interés en mejorar la documentación de Lead UPN Trujillo! La documentación es un esfuerzo de todo el equipo. 
 
